@@ -33,7 +33,8 @@ $ yarn install
 ```
 
 ## Running the app
-
+O APP FOI TESTADO UTILIZANDO POSTGRES
+Em app.module coloque seus dados como username,, password e database
 ```bash
 # development
 $ yarn run start
@@ -44,6 +45,7 @@ $ yarn run start:dev
 # production mode
 $ yarn run start:prod
 ```
+
 
 ## Test
 
