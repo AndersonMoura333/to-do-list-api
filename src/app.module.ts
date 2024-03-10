@@ -10,16 +10,18 @@ import { AuthModule } from './auth/auth.module';
 import { AuthController } from './auth/auth.controller';
 import {UsersController} from './users/users.controller'
 import { AuthService } from './auth/auth.service';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
+    ConfigModule.forRoot(),
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: 'localhost',
       port: 5432, 
-      username: 'postgres', 
-      password: 'root', 
-      database: 'teste2024', 
+      username: 'SEU USER NAME', 
+      password: 'SUA SENHA', 
+      database: 'SEU DATA BASE', 
       entities: [User, Task],
       synchronize: true, 
     }),
