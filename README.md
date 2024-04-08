@@ -22,41 +22,40 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+## Descrição
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Este projeto é uma aplicação to-do list construída usando o [Nest](https://github.com/nestjs/nest) framework em TypeScript.
 
-## Installation
+## Variáveis de Ambiente
+
+Antes de executar a aplicação, certifique-se de configurar as seguintes variáveis de ambiente:
+
+- `DATABASE_USER`: Perfil de usuário do banco de dados (por padrão 'postgres').
+- `DATABASE_PASSWORD`: Senha do usuário.
+- `DATABASE_NAME`: Nome do databese no qual o servidor armazenará os dados (certifique-se de ter criado o database anteriormente).
+- `PORT`: Número da porta para o servidor (por padrão 5432).
+
+Você deve criar um arquivo `.env` no diretório raiz do seu projeto para armazenar essas variáveis.
+
+## Instalação
 
 ```bash
 $ yarn install
 ```
 
-## Running the app
+## Rodando o projeto
 
 ```bash
-# development
+# modo de desenvolvimento
 $ yarn run start
 
-# watch mode
+# modo de observação
 $ yarn run start:dev
 
-# production mode
+# modo de produção
 $ yarn run start:prod
 ```
 
-## Test
-
-```bash
-# unit tests
-$ yarn run test
-
-# e2e tests
-$ yarn run test:e2e
-
-# test coverage
-$ yarn run test:cov
-```
 
 ## Support
 
